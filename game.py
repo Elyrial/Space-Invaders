@@ -58,6 +58,7 @@ def main():
         # Cap the frame rate
         pygame.time.Clock().tick(60)
 
+    # Quits game
     pygame.quit()
     sys.exit()
 
