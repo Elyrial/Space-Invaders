@@ -1,5 +1,6 @@
-import pygame
 import sys
+
+import pygame
 
 # Initialize Pygame
 pygame.init()
@@ -12,6 +13,7 @@ pygame.display.set_caption("Space Invaders")
 # Define colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+
 
 # Player class
 class Player(pygame.sprite.Sprite):
@@ -31,10 +33,12 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_RIGHT]:
             self.rect.x += self.speed
 
+
 # Create player sprite group
 all_sprites = pygame.sprite.Group()
 player = Player()
 all_sprites.add(player)
+
 
 # Main game loop
 def main():
@@ -61,6 +65,6 @@ def main():
     pygame.quit()
     sys.exit()
 
+
 if __name__ == "__main__":
     main()
-
